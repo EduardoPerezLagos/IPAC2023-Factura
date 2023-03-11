@@ -48,10 +48,10 @@
             this.GuardarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.UsuariosDataGridView = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             this.CodigoTextBox.Enabled = false;
             this.CodigoTextBox.Location = new System.Drawing.Point(142, 42);
             this.CodigoTextBox.Name = "CodigoTextBox";
-            this.CodigoTextBox.Size = new System.Drawing.Size(199, 22);
+            this.CodigoTextBox.Size = new System.Drawing.Size(294, 22);
             this.CodigoTextBox.TabIndex = 2;
             // 
             // NombreTextBox
@@ -86,7 +86,7 @@
             this.NombreTextBox.Enabled = false;
             this.NombreTextBox.Location = new System.Drawing.Point(142, 82);
             this.NombreTextBox.Name = "NombreTextBox";
-            this.NombreTextBox.Size = new System.Drawing.Size(199, 22);
+            this.NombreTextBox.Size = new System.Drawing.Size(294, 22);
             this.NombreTextBox.TabIndex = 3;
             // 
             // label3
@@ -104,7 +104,7 @@
             this.ContraseñaTextBox.Location = new System.Drawing.Point(142, 122);
             this.ContraseñaTextBox.Name = "ContraseñaTextBox";
             this.ContraseñaTextBox.PasswordChar = '*';
-            this.ContraseñaTextBox.Size = new System.Drawing.Size(199, 22);
+            this.ContraseñaTextBox.Size = new System.Drawing.Size(294, 22);
             this.ContraseñaTextBox.TabIndex = 5;
             // 
             // label4
@@ -121,7 +121,7 @@
             this.CorreoTextBox.Enabled = false;
             this.CorreoTextBox.Location = new System.Drawing.Point(142, 160);
             this.CorreoTextBox.Name = "CorreoTextBox";
-            this.CorreoTextBox.Size = new System.Drawing.Size(199, 22);
+            this.CorreoTextBox.Size = new System.Drawing.Size(294, 22);
             this.CorreoTextBox.TabIndex = 7;
             // 
             // RolComboBox
@@ -133,7 +133,7 @@
             "Usuario"});
             this.RolComboBox.Location = new System.Drawing.Point(142, 204);
             this.RolComboBox.Name = "RolComboBox";
-            this.RolComboBox.Size = new System.Drawing.Size(199, 24);
+            this.RolComboBox.Size = new System.Drawing.Size(294, 24);
             this.RolComboBox.TabIndex = 8;
             // 
             // label5
@@ -170,7 +170,7 @@
             this.AdjuntarFotoButton.FlatAppearance.BorderSize = 0;
             this.AdjuntarFotoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AdjuntarFotoButton.Image = global::Vista.Properties.Resources.buscar2;
-            this.AdjuntarFotoButton.Location = new System.Drawing.Point(592, 195);
+            this.AdjuntarFotoButton.Location = new System.Drawing.Point(716, 195);
             this.AdjuntarFotoButton.Name = "AdjuntarFotoButton";
             this.AdjuntarFotoButton.Size = new System.Drawing.Size(35, 33);
             this.AdjuntarFotoButton.TabIndex = 13;
@@ -180,16 +180,16 @@
             // FotoPictureBox
             // 
             this.FotoPictureBox.BackColor = System.Drawing.Color.White;
-            this.FotoPictureBox.Location = new System.Drawing.Point(373, 42);
+            this.FotoPictureBox.Location = new System.Drawing.Point(472, 42);
             this.FotoPictureBox.Name = "FotoPictureBox";
-            this.FotoPictureBox.Size = new System.Drawing.Size(213, 186);
+            this.FotoPictureBox.Size = new System.Drawing.Size(238, 186);
             this.FotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FotoPictureBox.TabIndex = 12;
             this.FotoPictureBox.TabStop = false;
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Location = new System.Drawing.Point(149, 274);
+            this.NuevoButton.Location = new System.Drawing.Point(212, 260);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 27);
             this.NuevoButton.TabIndex = 14;
@@ -199,8 +199,7 @@
             // 
             // ModificarButton
             // 
-            this.ModificarButton.Enabled = false;
-            this.ModificarButton.Location = new System.Drawing.Point(230, 274);
+            this.ModificarButton.Location = new System.Drawing.Point(293, 260);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(75, 27);
             this.ModificarButton.TabIndex = 15;
@@ -211,7 +210,7 @@
             // GuardarButton
             // 
             this.GuardarButton.Enabled = false;
-            this.GuardarButton.Location = new System.Drawing.Point(311, 274);
+            this.GuardarButton.Location = new System.Drawing.Point(374, 260);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(75, 27);
             this.GuardarButton.TabIndex = 16;
@@ -222,7 +221,7 @@
             // EliminarButton
             // 
             this.EliminarButton.Enabled = false;
-            this.EliminarButton.Location = new System.Drawing.Point(393, 274);
+            this.EliminarButton.Location = new System.Drawing.Point(456, 260);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 27);
             this.EliminarButton.TabIndex = 17;
@@ -232,7 +231,7 @@
             // CancelarButton
             // 
             this.CancelarButton.Enabled = false;
-            this.CancelarButton.Location = new System.Drawing.Point(474, 274);
+            this.CancelarButton.Location = new System.Drawing.Point(537, 260);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(75, 27);
             this.CancelarButton.TabIndex = 18;
@@ -240,13 +239,15 @@
             this.CancelarButton.UseVisualStyleBackColor = true;
             this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
-            // dataGridView1
+            // UsuariosDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-2, 307);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(661, 185);
-            this.dataGridView1.TabIndex = 19;
+            this.UsuariosDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UsuariosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsuariosDataGridView.Location = new System.Drawing.Point(-2, 307);
+            this.UsuariosDataGridView.Name = "UsuariosDataGridView";
+            this.UsuariosDataGridView.Size = new System.Drawing.Size(834, 185);
+            this.UsuariosDataGridView.TabIndex = 19;
             // 
             // errorProvider1
             // 
@@ -256,8 +257,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 490);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(832, 490);
+            this.Controls.Add(this.UsuariosDataGridView);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
@@ -281,8 +282,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsuariosForm";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.UsuariosForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuariosDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -310,7 +312,7 @@
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button EliminarButton;
         private System.Windows.Forms.Button CancelarButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView UsuariosDataGridView;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

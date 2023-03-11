@@ -1,4 +1,6 @@
-﻿using Entidades;
+﻿using Datos;
+using Entidades;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -11,6 +13,11 @@ namespace Vista
             InitializeComponent();
         }
         string tipoOperacion;
+
+        DataTable dt = new DataTable();
+        UsuarioDB UsuarioDB = new UsuarioDB();
+        Usuario user = new Usuario();
+
         private void HabilitarControles()
         {
             CodigoTextBox.Enabled = true;
@@ -22,6 +29,7 @@ namespace Vista
             AdjuntarFotoButton.Enabled = true;
             GuardarButton.Enabled = true;
             CancelarButton.Enabled = true;
+            ModificarButton.Enabled = false;
         }
         private void DeshabilitarControles()
         {
@@ -34,6 +42,7 @@ namespace Vista
             AdjuntarFotoButton.Enabled = false;
             GuardarButton.Enabled = false;
             CancelarButton.Enabled = false;
+            ModificarButton.Enabled = true;
         }
 
         private void LimpiarControles()
@@ -53,8 +62,6 @@ namespace Vista
             HabilitarControles();
             tipoOperacion = "Nuevo";
         }
-
-
 
         private void CancelarButton_Click(object sender, System.EventArgs e)
         {
@@ -100,8 +107,6 @@ namespace Vista
                 }
                 errorProvider1.Clear();
 
-                Usuario user = new Usuario();
-
                 user.CodigoUsuario = CodigoTextBox.Text;
                 user.Nombre = NombreTextBox.Text;
                 user.Contraseña = ContraseñaTextBox.Text;
@@ -117,8 +122,19 @@ namespace Vista
                     user.Foto = ms.GetBuffer();
                 }
                 //Insertar en la base de datos
+                bool inserto = UsuarioDB.Insertar(user);
+                if (inserto)
+                {
+                    LimpiarControles();
+                    DeshabilitarControles();
+                    TraerUsuarios();
+                    MessageBox.Show("Registro Guardado");
 
-
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo Guardar el Registro");
+                }
             }
             else if (tipoOperacion == "Modificar")
             {
@@ -129,6 +145,12 @@ namespace Vista
         private void ModificarButton_Click(object sender, System.EventArgs e)
         {
             tipoOperacion = "Modificar";
+
+            if (UsuariosDataGridView.SelectedRows.Count > 0)
+            {
+                CodigoTextBox.Text = UsuariosDataGridView.CurrentRow.Cells["CodigoUsuario"].Value.ToString();
+
+            }
         }
 
         private void AdjuntarFotoButton_Click(object sender, System.EventArgs e)
@@ -140,8 +162,17 @@ namespace Vista
             {
                 FotoPictureBox.Image = Image.FromFile(dialog.FileName);
             }
+        }
 
+        private void UsuariosForm_Load(object sender, System.EventArgs e)
+        {
+            TraerUsuarios();
+        }
 
+        private void TraerUsuarios()
+        {
+            dt = UsuarioDB.DevolverUsuario();
+            UsuariosDataGridView.DataSource = dt;
         }
     }
 }

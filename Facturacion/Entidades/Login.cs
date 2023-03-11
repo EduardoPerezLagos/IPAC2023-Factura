@@ -6,10 +6,6 @@
 
         public string Contraseña { get; set; }
 
-
-
-
-
         public Login()
         {
         }
