@@ -116,11 +116,6 @@ namespace Vista
                     FotoPictureBox.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
                     user.Foto = ms.GetBuffer();
                 }
-
-
-
-
-
                 //Insertar en la base de datos
 
 
