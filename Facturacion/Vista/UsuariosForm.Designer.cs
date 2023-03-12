@@ -220,13 +220,13 @@
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Enabled = false;
             this.EliminarButton.Location = new System.Drawing.Point(456, 260);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(75, 27);
             this.EliminarButton.TabIndex = 17;
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // CancelarButton
             // 
