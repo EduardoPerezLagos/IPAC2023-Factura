@@ -61,8 +61,10 @@ namespace Vista
 
         private void NuevoButton_Click(object sender, EventArgs e)
         {
+
             operacion = "Nuevo";
             HabilitarControles();
+            IdentidadTextBox.ReadOnly = false;
         }
 
         private void CancelarButton_Click(object sender, EventArgs e)
@@ -83,7 +85,7 @@ namespace Vista
                 DireccionTextBox.Text = ClientesDataGridView.CurrentRow.Cells["Direccion"].Value.ToString();
                 EstaActivoCheckBox.Checked = Convert.ToBoolean(ClientesDataGridView.CurrentRow.Cells["EstaActivo"].Value);
                 FechaNacimientoDateTimePicker.Value = Convert.ToDateTime(ClientesDataGridView.CurrentRow.Cells["FechaNacimiento"].Value);
-
+                IdentidadTextBox.ReadOnly = true;
                 HabilitarControles();
             }
         }
@@ -135,7 +137,7 @@ namespace Vista
                 bool modifico = clienteDB.Editar(cliente);
                 if (modifico)
                 {
-
+                    IdentidadTextBox.ReadOnly = false;
                     DeshabilitarControles();
                     LimpiarControles();
                     TraerClientes();
