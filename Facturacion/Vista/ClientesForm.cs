@@ -42,6 +42,8 @@ namespace Vista
             CorreoTextBox.Clear();
             DireccionTextBox.Clear();
             EstaActivoCheckBox.Checked = false;
+
+
         }
 
         private void DeshabilitarControles()
@@ -86,6 +88,7 @@ namespace Vista
                 EstaActivoCheckBox.Checked = Convert.ToBoolean(ClientesDataGridView.CurrentRow.Cells["EstaActivo"].Value);
                 FechaNacimientoDateTimePicker.Value = Convert.ToDateTime(ClientesDataGridView.CurrentRow.Cells["FechaNacimiento"].Value);
                 IdentidadTextBox.ReadOnly = true;
+
                 HabilitarControles();
             }
         }
@@ -98,7 +101,7 @@ namespace Vista
             cliente.Correo = CorreoTextBox.Text;
             cliente.Direccion = DireccionTextBox.Text;
             cliente.EstaActivo = EstaActivoCheckBox.Checked;
-            cliente.FechaNacimiento = FechaNacimientoDateTimePicker.Value;
+            cliente.FechaNacimiento = FechaNacimientoDateTimePicker.Value.Date;
 
             if (operacion == "Nuevo")
             {
@@ -180,6 +183,19 @@ namespace Vista
                         MessageBox.Show("No se pudo eliminar el registro");
                     }
                 }
+            }
+        }
+
+        private void FechaNacimientoDateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            FechaNacimientoDateTimePicker.CustomFormat = "dd/MM/yyyy";
+        }
+
+        private void FechaNacimientoDateTimePicker_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode == Keys.Back) || (e.KeyCode == Keys.Delete))
+            {
+                FechaNacimientoDateTimePicker.CustomFormat = " ";
             }
         }
     }

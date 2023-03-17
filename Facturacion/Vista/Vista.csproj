@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BuscarClienteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarClienteForm.Designer.cs">
+      <DependentUpon>BuscarClienteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarProductoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarProductoForm.Designer.cs">
+      <DependentUpon>BuscarProductoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     <Compile Include="UsuariosForm.Designer.cs">
       <DependentUpon>UsuariosForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BuscarClienteForm.resx">
+      <DependentUpon>BuscarClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarProductoForm.resx">
+      <DependentUpon>BuscarProductoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </EmbeddedResource>

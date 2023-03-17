@@ -77,7 +77,7 @@
             this.ribbonControlAdv1.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ribbonControlAdv1.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.ribbonControlAdv1.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem3;
+            this.ribbonControlAdv1.SelectedTab = this.toolStripTabItem4;
             this.ribbonControlAdv1.ShowRibbonDisplayOptionButton = true;
             this.ribbonControlAdv1.Size = new System.Drawing.Size(800, 129);
             this.ribbonControlAdv1.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -207,7 +207,7 @@
             this.toolStripEx3.Office12Mode = false;
             this.toolStripEx3.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx3.Size = new System.Drawing.Size(95, 63);
+            this.toolStripEx3.Size = new System.Drawing.Size(64, 63);
             this.toolStripEx3.TabIndex = 0;
             // 
             // ClientesToolStripButton
@@ -252,7 +252,7 @@
             this.toolStripEx4.Office12Mode = false;
             this.toolStripEx4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx4.Size = new System.Drawing.Size(100, 63);
+            this.toolStripEx4.Size = new System.Drawing.Size(131, 63);
             this.toolStripEx4.TabIndex = 0;
             // 
             // NuevaFacturaToolStripButton
@@ -265,6 +265,7 @@
             this.NuevaFacturaToolStripButton.Size = new System.Drawing.Size(91, 46);
             this.NuevaFacturaToolStripButton.Text = "Nueva Factura";
             this.NuevaFacturaToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.NuevaFacturaToolStripButton.Click += new System.EventHandler(this.NuevaFacturaToolStripButton_Click);
             // 
             // Menu
             // 

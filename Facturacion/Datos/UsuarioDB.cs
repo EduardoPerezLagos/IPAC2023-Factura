@@ -174,7 +174,6 @@ namespace Datos
             }
             return dt;
         }
-
         public byte[] DevolverFoto(string CodigoUsuario)
         {
             byte[] foto = new byte[0];

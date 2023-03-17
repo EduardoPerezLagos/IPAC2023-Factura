@@ -58,7 +58,7 @@
             // 
             this.ClientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ClientesDataGridView.Location = new System.Drawing.Point(-4, 337);
-            this.ClientesDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientesDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.ClientesDataGridView.Name = "ClientesDataGridView";
             this.ClientesDataGridView.Size = new System.Drawing.Size(741, 186);
             this.ClientesDataGridView.TabIndex = 19;
@@ -77,7 +77,7 @@
             // 
             this.NombreTextBox.Enabled = false;
             this.NombreTextBox.Location = new System.Drawing.Point(128, 76);
-            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NombreTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(279, 22);
             this.NombreTextBox.TabIndex = 8;
@@ -86,7 +86,7 @@
             // 
             this.IdentidadTextBox.Enabled = false;
             this.IdentidadTextBox.Location = new System.Drawing.Point(128, 33);
-            this.IdentidadTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IdentidadTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.IdentidadTextBox.Name = "IdentidadTextBox";
             this.IdentidadTextBox.Size = new System.Drawing.Size(279, 22);
             this.IdentidadTextBox.TabIndex = 7;
@@ -95,7 +95,7 @@
             // 
             this.TelefonoTextBox.Enabled = false;
             this.TelefonoTextBox.Location = new System.Drawing.Point(128, 119);
-            this.TelefonoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TelefonoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TelefonoTextBox.Name = "TelefonoTextBox";
             this.TelefonoTextBox.Size = new System.Drawing.Size(279, 22);
             this.TelefonoTextBox.TabIndex = 9;
@@ -104,7 +104,7 @@
             // 
             this.CorreoTextBox.Enabled = false;
             this.CorreoTextBox.Location = new System.Drawing.Point(128, 164);
-            this.CorreoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CorreoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CorreoTextBox.Name = "CorreoTextBox";
             this.CorreoTextBox.Size = new System.Drawing.Size(279, 22);
             this.CorreoTextBox.TabIndex = 10;
@@ -153,7 +153,7 @@
             // 
             this.DireccionTextBox.Enabled = false;
             this.DireccionTextBox.Location = new System.Drawing.Point(128, 208);
-            this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DireccionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.DireccionTextBox.Name = "DireccionTextBox";
             this.DireccionTextBox.Size = new System.Drawing.Size(279, 22);
             this.DireccionTextBox.TabIndex = 11;
@@ -173,7 +173,7 @@
             this.EstaActivoCheckBox.AutoSize = true;
             this.EstaActivoCheckBox.Enabled = false;
             this.EstaActivoCheckBox.Location = new System.Drawing.Point(128, 255);
-            this.EstaActivoCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EstaActivoCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.EstaActivoCheckBox.Name = "EstaActivoCheckBox";
             this.EstaActivoCheckBox.Size = new System.Drawing.Size(15, 14);
             this.EstaActivoCheckBox.TabIndex = 12;
@@ -183,7 +183,7 @@
             // 
             this.CancelarButton.Enabled = false;
             this.CancelarButton.Location = new System.Drawing.Point(539, 296);
-            this.CancelarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CancelarButton.Margin = new System.Windows.Forms.Padding(4);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(100, 33);
             this.CancelarButton.TabIndex = 18;
@@ -193,9 +193,8 @@
             // 
             // EliminarButton
             // 
-            this.EliminarButton.Enabled = false;
             this.EliminarButton.Location = new System.Drawing.Point(431, 296);
-            this.EliminarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EliminarButton.Margin = new System.Windows.Forms.Padding(4);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(100, 33);
             this.EliminarButton.TabIndex = 17;
@@ -207,7 +206,7 @@
             // 
             this.GuardarButton.Enabled = false;
             this.GuardarButton.Location = new System.Drawing.Point(322, 296);
-            this.GuardarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GuardarButton.Margin = new System.Windows.Forms.Padding(4);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(100, 33);
             this.GuardarButton.TabIndex = 16;
@@ -218,7 +217,7 @@
             // ModificarButton
             // 
             this.ModificarButton.Location = new System.Drawing.Point(214, 296);
-            this.ModificarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ModificarButton.Margin = new System.Windows.Forms.Padding(4);
             this.ModificarButton.Name = "ModificarButton";
             this.ModificarButton.Size = new System.Drawing.Size(100, 33);
             this.ModificarButton.TabIndex = 15;
@@ -229,7 +228,7 @@
             // NuevoButton
             // 
             this.NuevoButton.Location = new System.Drawing.Point(106, 296);
-            this.NuevoButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NuevoButton.Margin = new System.Windows.Forms.Padding(4);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(100, 33);
             this.NuevoButton.TabIndex = 14;
@@ -239,13 +238,16 @@
             // 
             // FechaNacimientoDateTimePicker
             // 
+            this.FechaNacimientoDateTimePicker.CustomFormat = " ";
             this.FechaNacimientoDateTimePicker.Enabled = false;
-            this.FechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.FechaNacimientoDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaNacimientoDateTimePicker.Location = new System.Drawing.Point(601, 33);
-            this.FechaNacimientoDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FechaNacimientoDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.FechaNacimientoDateTimePicker.Name = "FechaNacimientoDateTimePicker";
             this.FechaNacimientoDateTimePicker.Size = new System.Drawing.Size(113, 22);
             this.FechaNacimientoDateTimePicker.TabIndex = 13;
+            this.FechaNacimientoDateTimePicker.ValueChanged += new System.EventHandler(this.FechaNacimientoDateTimePicker_ValueChanged);
+            this.FechaNacimientoDateTimePicker.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FechaNacimientoDateTimePicker_KeyDown);
             // 
             // errorProvider1
             // 
@@ -287,7 +289,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ClientesDataGridView);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ClientesForm";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.ClientesForm_Load);
