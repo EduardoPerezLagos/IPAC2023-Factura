@@ -127,7 +127,7 @@
             this.groupBox2.Controls.Add(this.BuscarClienteButton);
             this.groupBox2.Controls.Add(this.IdentidadTextBox);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 99);
+            this.groupBox2.Location = new System.Drawing.Point(12, 95);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(842, 75);
             this.groupBox2.TabIndex = 2;
@@ -181,7 +181,7 @@
             this.groupBox3.Controls.Add(this.BuscarProductoButton);
             this.groupBox3.Controls.Add(this.CodigoProductoTextBox);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(12, 193);
+            this.groupBox3.Location = new System.Drawing.Point(12, 185);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(842, 100);
             this.groupBox3.TabIndex = 3;
@@ -245,7 +245,6 @@
             // 
             this.CodigoProductoTextBox.Location = new System.Drawing.Point(113, 27);
             this.CodigoProductoTextBox.Name = "CodigoProductoTextBox";
-            this.CodigoProductoTextBox.ReadOnly = true;
             this.CodigoProductoTextBox.Size = new System.Drawing.Size(238, 22);
             this.CodigoProductoTextBox.TabIndex = 3;
             this.CodigoProductoTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodigoProductoTextBox_KeyPress);
@@ -261,15 +260,16 @@
             // 
             // DetalleDataGridView
             // 
+            this.DetalleDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DetalleDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DetalleDataGridView.Location = new System.Drawing.Point(-5, 304);
             this.DetalleDataGridView.Name = "DetalleDataGridView";
-            this.DetalleDataGridView.Size = new System.Drawing.Size(871, 179);
+            this.DetalleDataGridView.Size = new System.Drawing.Size(871, 143);
             this.DetalleDataGridView.TabIndex = 4;
             // 
             // SubTotalTextBox
             // 
-            this.SubTotalTextBox.Location = new System.Drawing.Point(702, 498);
+            this.SubTotalTextBox.Location = new System.Drawing.Point(702, 462);
             this.SubTotalTextBox.Name = "SubTotalTextBox";
             this.SubTotalTextBox.ReadOnly = true;
             this.SubTotalTextBox.Size = new System.Drawing.Size(134, 22);
@@ -278,7 +278,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(595, 501);
+            this.label8.Location = new System.Drawing.Point(595, 465);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 16);
             this.label8.TabIndex = 5;
@@ -286,7 +286,7 @@
             // 
             // ISVTextBox
             // 
-            this.ISVTextBox.Location = new System.Drawing.Point(702, 526);
+            this.ISVTextBox.Location = new System.Drawing.Point(702, 490);
             this.ISVTextBox.Name = "ISVTextBox";
             this.ISVTextBox.ReadOnly = true;
             this.ISVTextBox.Size = new System.Drawing.Size(134, 22);
@@ -295,7 +295,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(595, 529);
+            this.label9.Location = new System.Drawing.Point(595, 493);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(31, 16);
             this.label9.TabIndex = 7;
@@ -303,7 +303,7 @@
             // 
             // DescuentoTextBox
             // 
-            this.DescuentoTextBox.Location = new System.Drawing.Point(702, 554);
+            this.DescuentoTextBox.Location = new System.Drawing.Point(702, 518);
             this.DescuentoTextBox.Name = "DescuentoTextBox";
             this.DescuentoTextBox.Size = new System.Drawing.Size(134, 22);
             this.DescuentoTextBox.TabIndex = 10;
@@ -311,7 +311,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(595, 557);
+            this.label10.Location = new System.Drawing.Point(595, 521);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 16);
             this.label10.TabIndex = 9;
@@ -319,7 +319,7 @@
             // 
             // TotalTextBox
             // 
-            this.TotalTextBox.Location = new System.Drawing.Point(702, 582);
+            this.TotalTextBox.Location = new System.Drawing.Point(702, 546);
             this.TotalTextBox.Name = "TotalTextBox";
             this.TotalTextBox.ReadOnly = true;
             this.TotalTextBox.Size = new System.Drawing.Size(134, 22);
@@ -328,7 +328,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(595, 585);
+            this.label11.Location = new System.Drawing.Point(595, 549);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 16);
             this.label11.TabIndex = 11;
@@ -336,7 +336,7 @@
             // 
             // GuardarButton
             // 
-            this.GuardarButton.Location = new System.Drawing.Point(10, 563);
+            this.GuardarButton.Location = new System.Drawing.Point(17, 527);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(75, 38);
             this.GuardarButton.TabIndex = 13;
@@ -346,7 +346,7 @@
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(103, 563);
+            this.CancelarButton.Location = new System.Drawing.Point(110, 527);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(75, 38);
             this.CancelarButton.TabIndex = 14;
@@ -359,7 +359,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(866, 609);
+            this.ClientSize = new System.Drawing.Size(866, 574);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.TotalTextBox);
