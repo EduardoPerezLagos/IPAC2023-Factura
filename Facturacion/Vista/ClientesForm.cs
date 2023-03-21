@@ -42,7 +42,7 @@ namespace Vista
             CorreoTextBox.Clear();
             DireccionTextBox.Clear();
             EstaActivoCheckBox.Checked = false;
-
+            FechaNacimientoDateTimePicker.Value = DateTime.Now;
 
         }
 
